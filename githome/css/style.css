@@ -1,0 +1,43 @@
+* {
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+  padding: 0px;
+}
+
+body {
+  background-color: #eae7e3;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+  background-color: #eaf9f4;
+  border: 1px solid;
+}
+
+nav ul li {
+  font-size: 25px;
+  padding: 10px 0 10px 0;
+}
+
+nav ul li a {
+  color: black;
+}
+
+nav ul li a:hover {
+  color: rgb(121, 199, 43);
+  text-decoration: underline;
+}
