@@ -1,16 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap");
 
 * {
-  margin: 0 auto;
   list-style: none;
 }
 
-body {
-    width: 900px;
+.carcass {
+    display: inline-block;
+    width: 420px;
 }
 
-img {
-    margin-top: 100px;
+body {
+    max-width: 904px;
+    margin: 0 auto;
+}
+
+nav {
+    margin-top: 70px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+nav li:last-child {
+    margin-right: 0;
 }
 
 nav a {
@@ -30,7 +45,6 @@ nav a:hover {
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
     color: #b4ad9e;
-    margin: 30px 0;
 }
 
 .headline {
@@ -43,7 +57,10 @@ nav a:hover {
     font-family: "Playfair Display", serif;
     font-size: 14px;
     color: #626262;
-    margin: 30px 0;
+}
+
+.button {
+    text-align: center;
 }
 
 button {
@@ -54,4 +71,24 @@ button {
     border: 1px solid #626262;
     padding: 20px 35px;
     margin: 25px 0 70px 0;
+}
+
+span {
+    display: none;
+}
+
+.mr_60 {
+    margin-right: 60px;
+}
+
+.mb_30 {
+    margin-bottom: 30px;
+}
+
+.mb_100 {
+    margin-bottom: 100px;
+}
+
+.mb_135 {
+    margin-bottom: 135px;
 }
