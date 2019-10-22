@@ -1,57 +1,95 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap");
 
 * {
-  margin: 0 auto;
   list-style: none;
 }
 
-body {
-    width: 900px;
+.container {
+  max-width: 904px;
+  margin: 0 auto;
 }
 
-img {
-    margin-top: 100px;
+.navigation {
+  margin: 70px 0 100px 0;
+  text-align: center;
 }
 
-nav a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Playfair Display", serif;
-    font-size: 14px;
-    color: #626262;
+.navigation li {
+  display: inline-block;
+  margin-right: 100px;
 }
 
-nav a:hover {
-    color: #03a9f4;
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #626262;
+}
+
+.navigation a:hover {
+  color: #03a9f4;
+}
+
+.carcass {
+  display: inline-block;
+  width: 420px;
+  margin-bottom: 135px;
+}
+
+.carcass:nth-last-child(2),
+.carcass:nth-last-child(3) {
+  margin-bottom: 55px;
+}
+
+.carcass:nth-child(2n + 1) {
+  margin-right: 60px;
+}
+
+.img {
+  margin-bottom: 30px;
 }
 
 .caption {
-    text-transform: uppercase;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 14px;
-    color: #b4ad9e;
-    margin: 30px 0;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+  margin-bottom: 30px;
 }
 
 .headline {
-    font-family: "Playfair Display", serif;
-    font-size: 30px;
-    color: #626262;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #626262;
+  margin-bottom: 30px;
 }
 
 .text {
-    font-family: "Playfair Display", serif;
-    font-size: 14px;
-    color: #626262;
-    margin: 30px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+
+.button {
+  text-align: center;
 }
 
 button {
-    font-family: "Playfair Display", serif;
-    font-size: 20px;
-    color: #626262;
-    background-color: #fff;
-    border: 1px solid #626262;
-    padding: 20px 35px;
-    margin: 25px 0 70px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #626262;
+  background-color: #fff;
+  border: 1px solid #626262;
+  padding: 20px 35px;
+  margin-bottom: 70px;
+}
+
+span {
+  display: none;
 }
