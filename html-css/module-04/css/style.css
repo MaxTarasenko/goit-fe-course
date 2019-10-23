@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900&display=swap");
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding-top: 35px;
+  margin-bottom: 100px;
+}
+
+.navigation_logo {
+  float: left;
+}
+
+.navigation_logo a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  color: #555252;
+  text-transform: uppercase;
+}
+
+.navigation_logo a span {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.navigation_menu {
+  float: right;
+}
+
+.navigation_menu li {
+  float: left;
+  margin-right: 30px;
+}
+
+.navigation_menu li:last-child {
+  margin-right: 0;
+}
+
+.navigation_menu a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 11px;
+  color: #0f0101;
+  text-transform: uppercase;
+}
+
+.navigation_menu a:hover {
+  color: #1abc9c;
+}
+
+.headline {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #515151;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.headline::after {
+  content: "";
+  background-image: url(../img/line.png);
+  width: 164px;
+  height: 7px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.box {
+  width: 255px;
+  height: 322px;
+  background-color: #e9f0fd;
+}
+
+.box_bline {
+  background-color: #323232;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.box_bline h2 {
+  float: left;
+}
+
+.box_square {
+  float: right;
+  width: 40px;
+  height: 54px;
+  background-color: #ffffff;
+  opacity: .5;
+}
+
+.box_square p {
+  opacity: 1;
+}
