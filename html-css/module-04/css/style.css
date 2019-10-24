@@ -86,7 +86,7 @@
 
 .headline::after {
   content: "";
-  background-image: url(../img/line.png);
+  background-color: #1abc9c;
   width: 164px;
   height: 7px;
   display: block;
@@ -159,7 +159,7 @@
 
 .blog_box h2::after {
   content: "";
-  background-image: url(../img/line2.png);
+  background-color: #1abc9c;
   width: 136px;
   height: 3px;
   display: block;
