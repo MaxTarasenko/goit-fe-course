@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>module-04</title>
   </head>
+
   <body>
     <div class="container">
       <header class="navigation clearfix">
@@ -15,7 +16,7 @@
           <a href="#"><span>m</span>art</a>
         </div>
         <nav class="navigation_menu">
-          <ul>
+          <ul class="clearfix">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Page</a></li>
@@ -25,118 +26,123 @@
           </ul>
         </nav>
       </header>
-      <article class="gallery clearfix">
-        <h1 class="headline">Featured Products</h1>
-        <div class="box">
-          <a href="#">
-          <img src="./img/heel.png" alt="heel" />
-          <div class="box_bline">
-            <h2>Blue Tshirt</h2>
-            <div class="box_square">
-              <p>$26</p>
-            </div>
-          </div>
-          </a>
+
+      <div class="products clearfix">
+        <div class="headline">
+          <p>Featured Products</p>
         </div>
-        <div class="box">
-          <a href="#">
-          <img src="./img/watch.png" alt="heel" />
-          <div class="box_bline">
-            <h2>WOMAN shirt</h2>
-            <div class="box_square">
-              <p>$31</p>
+        <ul class="clearfix">
+          <li class="box">
+            <a href="#"><img src="./img/heel.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Blue Tshirt</a>
+              <div class="box_square">$26</div>
             </div>
-          </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="#">
-          <img src="./img/hat.png" alt="heel" />
-          <div class="box_bline">
-            <h2>YELLOW Tshirt</h2>
-            <div class="box_square">
-              <p>$21</p>
+          </li>
+
+          <li class="box">
+            <a href="#"><img src="./img/watch.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Woman Shirt</a>
+              <div class="box_square">$31</div>
             </div>
-          </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="#">
-          <img src="./img/bag.png" alt="heel" />
-          <div class="box_bline">
-            <h2>Cool lingerie</h2>
-            <div class="box_square">
-              <p>$56</p>
+          </li>
+
+          <li class="box">
+            <a href="#"><img src="./img/hat.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Yellow Tshirt</a>
+              <div class="box_square">$21</div>
             </div>
-          </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="#">
-          <img src="./img/bag2.png" alt="heel" />
-          <div class="box_bline">
-            <h2>Blue Tshirt</h2>
-            <div class="box_square">
-              <p>$26</p>
+          </li>
+
+          <li class="box">
+            <a href="#"><img src="./img/bag.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Cool Lingerie</a>
+              <div class="box_square">$56</div>
             </div>
-          </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="#">
-          <img src="./img/strap.png" alt="heel" />
-          <div class="box_bline">
-            <h2>WOMAN shirt</h2>
-            <div class="box_square">
-              <p>$31</p>
+          </li>
+
+          <li class="box">
+            <a href="#"><img src="./img/bag2.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Blue Tshirt</a>
+              <div class="box_square">$26</div>
             </div>
-          </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="#">
-          <img src="./img/shoes.png" alt="heel" />
-          <div class="box_bline">
-            <h2>YELLOW Tshirt</h2>
-            <div class="box_square">
-              <p>$21</p>
+          </li>
+
+          <li class="box">
+            <a href="#"><img src="./img/strap.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Woman Shirt</a>
+              <div class="box_square">$31</div>
             </div>
-          </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="#">
-          <img src="./img/glasses.png" alt="heel" />
-          <div class="box_bline">
-            <h2>Cool lingerie</h2>
-            <div class="box_square">
-              <p>$56</p>
+          </li>
+
+          <li class="box">
+            <a href="#"><img src="./img/shoes.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Yellow Tshirt</a>
+              <div class="box_square">$21</div>
             </div>
-          </div>
-          </a>
+          </li>
+
+          <li class="box">
+            <a href="#"><img src="./img/glasses.png" alt="heel"/></a>
+            <div class="box_bline">
+              <a href="#">Cool Lingerie</a>
+              <div class="box_square">$56</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="blog clearfix">
+        <div class="headline">
+          <p>Latest News</p>
         </div>
-      </article>
-      <article class="blog clearfix">
-          <h1 class="headline">Latest News</h1>
-          <div class="blog_box">
-            <img src="./img/ipad.png" alt="">
-            <h2>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea</h2>
-            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
-            <button type="button">Read More</button>
-          </div>
-          <div class="blog_box">
-            <img src="./img/slide1.png" alt="">
-            <h2>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea</h2>
-            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
-            <button type="button">Read More</button>
-          </div>
-          <div class="blog_box">
-            <img src="./img/bus.png" alt="">
-            <h2>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea</h2>
-            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
-            <button type="button">Read More</button>
-          </div>
-      </article>
+
+        <div class="blog_box">
+          <img src="./img/ipad.png" alt="" />
+          <h2>
+            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea
+          </h2>
+          <p>
+            Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam
+            nec tellus a odio tincidunt
+          </p>
+          <!-- <button type="button">Read More</button> -->
+          <a class="button" href="#">Read More</a>
+        </div>
+
+        <div class="blog_box">
+          <img src="./img/slide1.png" alt="" />
+          <h2>
+            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea
+          </h2>
+          <p>
+            Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam
+            nec tellus a odio tincidunt
+          </p>
+          <a class="button" href="#">Read More</a>
+        </div>
+
+        <div class="blog_box">
+          <img src="./img/bus.png" alt="" />
+          <h2>
+            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea
+          </h2>
+          <p>
+            Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam
+            nec tellus a odio tincidunt
+          </p>
+          <a class="button" href="#">Read More</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
