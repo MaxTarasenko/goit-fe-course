@@ -7,10 +7,12 @@
   padding: 0 15px;
 }
 
+/* Logo and Navigation */
 .navigation {
   padding: 35px 0 30px 0;
 }
 
+/* Logo */
 .logo {
   float: left;
   font-size: 0;
@@ -27,13 +29,14 @@
   color: #1abc9c;
 }
 
+/* Navigation menu */
 .menu {
   float: right;
   font-size: 0;
 }
 
 .menu li {
-  float: left;
+  display: inline-block;
   margin-right: 35px;
 }
 
@@ -51,6 +54,7 @@
   color: #1abc9c;
 }
 
+/* Static slider */
 .slider_wrap {
   background: #323232;
 }
@@ -65,7 +69,7 @@
 }
 
 .slider::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -125,6 +129,7 @@
   opacity: 1;
 }
 
+/* Main content */
 .main {
   background-color: #e9f0fd;
   padding: 100px 0;
@@ -154,11 +159,135 @@
 
 .box-item {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
-.box-item:last-child {
-  margin-left: 0;
+.box-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.box-img {
+  position: relative;
+}
+
+.box-shadow {
+  width: 235px;
+  height: 264px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid rgb(255, 255, 255, 0.54);
+}
+
+.box-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.54);
+}
+
+.box-shadow-items {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.box-shadow-items ul {
+  text-align: center;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ffffff;
+  position: relative;
+  margin: 0 8px 7px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon:nth-child(3) {
+  margin-right: 0;
+}
+
+.icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heart,
+.arrows,
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heart {
+  background: url(../img/heart.png);
+  width: 26px;
+  height: 23px;
+}
+
+.arrows {
+  background: url(../img/arrows.png);
+  width: 26px;
+  height: 22px;
+}
+
+.clock {
+  background: url(../img/clock.png);
+  width: 24px;
+  height: 25px;
+}
+
+.box-shadow-items button {
+  border: 1px solid #ffffff;
+  position: relative;
+  display: inline-block;
+  width: 182px;
+  background-color: #323232;
+  padding: 0;
+}
+
+.icon_basket {
+  background: url(../img/basket.png);
+  width: 28px;
+  height: 27px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+}
+
+.box-shadow-items button span {
+  font: 400 14px/48px OpenSans, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  padding-right: 20px;
+  float: right;
+}
+
+.icon:hover,
+.box-shadow-items button:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+.box-item:hover .box-shadow {
+  display: block;
 }
 
 .box-rectangle {
@@ -190,89 +319,18 @@
   background-color: #1abc9c;
 }
 
-.box-item a {
-  position: relative;
-}
-
-.box-card {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 235px;
-  height: 261px;
-  background-color: rgb(0, 0, 0, 0.54);
-  border: 10px solid #ffffff;
-}
-
-.box-card-items {
-  width: 235px;
-  height: 261px;
-  position: relative;
-}
-
-.box-card-items ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ffffff;
-  position: relative;
-  margin-right: 10px;
-  display: inline-block;
-}
-
-.icon:nth-child(3) {
-  margin-right: 0;
-}
-
-.icon img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.basket {
-  border: 1px solid #ffffff;
-  position: relative;
-  margin-right: 10px;
-  display: inline-block;
-  width: 182px;
-  height: 50px;
+/* Footer content */
+footer {
   background-color: #323232;
-  margin: 10px 0 0 0;
 }
 
-.basket img {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translate(0, -50%);
-}
-
-.basket span {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translate(0, -50%);
-  font: 400 14px/32px OpenSans, sans-serif;
-  text-transform: uppercase;
+footer p {
+  font: 400 16px/88px OpenSans, sans-serif;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: #fefefe;
+  text-align: center;
 }
 
-.icon:hover, .basket:hover {
-  background-color: #1abc9c;
-  border: 1px solid #1abc9c;
-}
-
-.box-item:hover .box-card {
-  display: block;
+footer p span {
+  color: #46bfa9;
 }
