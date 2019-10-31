@@ -331,6 +331,8 @@ footer p {
   text-align: center;
 }
 
-footer p span {
+footer p a {
+  font: 400 16px/18px OpenSans, sans-serif;
   color: #46bfa9;
+  display: inline-block;
 }
