@@ -4,6 +4,7 @@
 .container {
   width: 1110px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .navigation {
@@ -60,26 +61,33 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background-color: #000002;
+  background: url(../img/slide.png);
 }
 
-.slide1 {
-  background: url(../img/slide.png);
-  width: 1600px;
-  height: 600px;
-  opacity: 0.52;
+.slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0, 0, 2, 0.52);
 }
 
 .slider-text {
   position: absolute;
   top: 200px;
   left: 430px;
+  width: 730px;
+  z-index: 2;
 }
 
-.slider-text p:first-child {
+.slider-text h2 {
   font: 900 60px/82px "Roboto", sans-serif;
   letter-spacing: -0.03em;
   color: #ffffff;
+  z-index: 2;
 }
 
 .slider-text p:last-child {
@@ -95,6 +103,7 @@
   position: absolute;
   top: 225px;
   border: 0 solid;
+  z-index: 2;
 }
 
 .slider button:nth-of-type(1) {
@@ -186,6 +195,7 @@
 }
 
 .box-card {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -198,7 +208,7 @@
 
 .box-card-items {
   width: 235px;
-    height: 261px;
+  height: 261px;
   position: relative;
 }
 
@@ -209,33 +219,60 @@
   transform: translate(-50%, -50%);
 }
 
-.box-card ul li {
+.icon {
   width: 50px;
   height: 50px;
   border: 1px solid #ffffff;
   position: relative;
   margin-right: 10px;
   display: inline-block;
-  font: 400 14px/32px OpenSans, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-  color: #ffffff;
 }
 
-.box-card ul li:nth-of-type(3) {
+.icon:nth-child(3) {
   margin-right: 0;
 }
 
-.box-card ul li:nth-of-type(4) {
+.icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.basket {
+  border: 1px solid #ffffff;
+  position: relative;
+  margin-right: 10px;
+  display: inline-block;
   width: 182px;
   height: 50px;
   background-color: #323232;
   margin: 10px 0 0 0;
 }
 
-.box-card ul li img {
+.basket img {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 15px;
+  transform: translate(0, -50%);
+}
+
+.basket span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  font: 400 14px/32px OpenSans, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.icon:hover, .basket:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+.box-item:hover .box-card {
+  display: block;
 }
