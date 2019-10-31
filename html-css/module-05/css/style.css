@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,900&display=swap");
+
+/* Container style */
+.container_header {
+  width: 1110px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding: 35px 0 30px 0;
+}
+
+.logo {
+  float: left;
+  font-size: 0;
+}
+
+.logo a {
+  font: 300 30px/32px "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #555252;
+}
+
+.logo a::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.menu {
+  float: right;
+  font-size: 0;
+}
+
+.menu li {
+  float: left;
+  margin-right: 35px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  font: 700 14px/11px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #0f0101;
+}
+
+.menu li a:hover {
+  color: #1abc9c;
+}
