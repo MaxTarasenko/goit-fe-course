@@ -172,7 +172,7 @@
 
 .box-shadow {
   width: 235px;
-  height: 264px;
+  height: 262px;
   display: none;
   position: absolute;
   top: 50%;
@@ -200,29 +200,18 @@
   z-index: 2;
 }
 
-.box-shadow-items ul {
-  text-align: center;
-}
-
 .icon {
   width: 48px;
   height: 48px;
   border: 1px solid #ffffff;
   position: relative;
-  margin: 0 8px 7px 0;
+  margin: 0 12px 7px 0;
   display: inline-block;
   cursor: pointer;
 }
 
 .icon:nth-child(3) {
   margin-right: 0;
-}
-
-.icon img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .heart,
@@ -252,10 +241,9 @@
   height: 25px;
 }
 
-.box-shadow-items button {
+.basket button {
   border: 1px solid #ffffff;
   position: relative;
-  display: inline-block;
   width: 182px;
   background-color: #323232;
   padding: 0;
