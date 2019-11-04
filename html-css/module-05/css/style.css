@@ -164,9 +164,13 @@
   background-color: #1abc9c;
 }
 
+.products ul {
+  font-size: 0;
+}
+
 .box-item {
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 30px;
   width: 255px;
 }
 
