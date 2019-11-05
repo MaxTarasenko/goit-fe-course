@@ -57,3 +57,39 @@ font-family: "Roboto", sans-serif;
   left: 50%;
   transform: translateX(-50%);
 }
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.headline:last-child {
+  margin-bottom: 40px;
+}
+
+.headline h3 {
+  font: 24px "Kaushan Script";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.headline h2 {
+  font: 700 30px "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline h2::after {
+  content: "";
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-top: 40px;
+}
