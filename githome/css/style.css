@@ -1,3 +1,8 @@
+.container {
+  background: url(../img/back.png) no-repeat center;
+  /* height: 900px; */
+}
+
 header::after {
   content: "";
   background: url(../img/back.png);
