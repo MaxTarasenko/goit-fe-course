@@ -4,3 +4,56 @@ font-family: "Montserrat", sans-serif;
 font-family: "Kaushan Script", cursive;
 font-family: "Roboto", sans-serif; 
 */
+
+.container {
+  width: 1231px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin-bottom: 130px;
+}
+
+.logo a {
+  font: 700 30px "Montserrat";
+  color: #95e1d3;
+  line-height: 1.2;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu ul {
+  display: flex;
+  width: 491px;
+  justify-content: space-between;
+}
+
+.menu-item a {
+  font: 400 14px "Montserrat";
+  color: #95e1d3;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: relative;
+  transition: color 200ms linear;
+}
+
+.menu-item a:hover {
+  color: #f38181;
+}
+
+.menu-item a:hover::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #f38181;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
