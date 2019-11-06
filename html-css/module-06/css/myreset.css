@@ -266,3 +266,7 @@ body.overflow-hidden {
     width: 1170px;
   }
 }
+
+img {
+  display: block;
+}
