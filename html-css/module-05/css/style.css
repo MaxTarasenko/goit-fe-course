@@ -195,19 +195,16 @@
 .box-shadow::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
   background-color: rgb(0, 0, 0, 0.54);
 }
 
 .box-shadow-items {
   position: absolute;
-  top: 80px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   z-index: 2;
   font-size: 0;
 }
@@ -261,6 +258,7 @@
   background-color: #323232;
   padding: 0;
   cursor: pointer;
+  display: block;
 }
 
 .icon_basket {
@@ -273,7 +271,7 @@
   transform: translate(0, -50%);
 }
 
-.box-shadow-items button span {
+.basket span {
   font: 400 14px/48px OpenSans, sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -324,6 +322,7 @@
 /* Footer content */
 footer {
   background-color: #323232;
+  font-size: 0;
 }
 
 footer p {
@@ -334,7 +333,6 @@ footer p {
 }
 
 footer p a {
-  font: 400 16px/18px OpenSans, sans-serif;
+  font: 400 16px OpenSans, sans-serif;
   color: #46bfa9;
-  display: inline-block;
 }
