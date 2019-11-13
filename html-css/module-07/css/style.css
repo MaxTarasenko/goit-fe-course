@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/* Header navigation and logo */
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -33,4 +35,78 @@
 
 .menu-item a:hover {
   color: #fed136;
+}
+
+/* Main content */
+
+/* Content Headline */
+.content_headline {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.content_headline h2 {
+  font: 700 40px/75px "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  color: #222222;
+}
+
+.content_headline p {
+  font: 400 16px "Droid Serif Italic";
+  font-style: italic;
+  color: #777777;
+  line-height: 1.2;
+}
+
+/* Services content */
+
+.services_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.services_items {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 280px;
+}
+
+/* Service Icons */
+.services_items i {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 100px 100px 100px 100px;
+  -moz-border-radius: 100px 100px 100px 100px;
+  -webkit-border-radius: 100px 100px 100px 100px;
+  border: 3px solid #fed336;
+}
+
+.Icon-Basket {
+  background: url(../img/Icon-Basket.png) no-repeat center;
+}
+
+.Icon-Laptop {
+  background: url(../img/Icon-Laptop.png) no-repeat center;
+}
+
+.Icon-Locked {
+  background: url(../img/Icon-Locked.png) no-repeat center;
+}
+
+.services_items h3 {
+  font: 700 18px/60px "Montserrat";
+  letter-spacing: -0.025em;
+  color: #222222;
+  text-align: center;
+}
+
+.services_items p {
+  font: 400 14px "Roboto Slab Regular";
+  letter-spacing: -0.025em;
+  color: #777777;
+  text-align: center;
+  line-height: 1.5;
 }
