@@ -1,0 +1,36 @@
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 30px;
+  margin-bottom: 115px;
+}
+
+.logo a {
+  display: flex;
+  font: normal 26px/41px "Wisdom-Script";
+  letter-spacing: 0.05em;
+  color: #fed136;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 485px;
+}
+
+.menu-item a {
+  font: 400 14px "Montserrat";
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.menu-item a:hover {
+  color: #fed136;
+}
