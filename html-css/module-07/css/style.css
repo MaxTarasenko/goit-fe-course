@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: baseline;
   padding-top: 30px;
-  margin-bottom: 115px;
+  margin-bottom: 100px;
 }
 
 .logo a {
@@ -109,4 +109,101 @@
   color: #777777;
   text-align: center;
   line-height: 1.5;
+}
+
+/* Content Footer */
+
+footer {
+  background-color: #222222;
+  padding: 95px 0 115px;
+  position: relative;
+}
+
+footer::after {
+  content: "";
+  background: url(../img/Map_Image.png) no-repeat;
+  position: absolute;
+  width: 614px;
+  height: 537px;
+  top: 58%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+footer .content_headline h2 {
+  color: #ffffff;
+}
+
+/* Footer Form */
+.text-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.text-form-r {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 455px;
+  justify-content: space-between;
+}
+
+.form-text1 {
+  height: 50px;
+  padding-left: 20px;
+}
+
+.form-text2 {
+  width: 455px;
+  height: 210px;
+  padding: 18px;
+}
+
+.form-text1,
+.form-text2 {
+  font: 700 14px "Montserrat";
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.text-form input::placeholder,
+.text-form textarea::placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+.form-button {
+  text-align: center;
+}
+
+.btn-submit {
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  border: 0;
+  margin: 0 auto;
+  font: 700 18px "Montserrat";
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.btn-submit:hover {
+  background-color: #bbbbbb;
+}
+
+/* Validation form text (styles) */
+.text-form input:valid,
+.text-form textarea:valid {
+  outline: 2px green solid;
+}
+
+.text-form input:invalid,
+.text-form textarea:invalid {
+  outline: 2px red solid;
 }
