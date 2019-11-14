@@ -74,7 +74,8 @@
 }
 
 /* Service Icons */
-.services_items i {
+.services_items::before {
+  content: "";
   width: 72px;
   height: 72px;
   margin: 0 auto;
@@ -84,15 +85,15 @@
   border: 3px solid #fed336;
 }
 
-.Icon-Basket {
+.services_items:nth-child(1)::before {
   background: url(../img/Icon-Basket.png) no-repeat center;
 }
 
-.Icon-Laptop {
+.services_items:nth-child(2)::before {
   background: url(../img/Icon-Laptop.png) no-repeat center;
 }
 
-.Icon-Locked {
+.services_items:nth-child(3)::before {
   background: url(../img/Icon-Locked.png) no-repeat center;
 }
 
@@ -114,20 +115,8 @@
 /* Content Footer */
 
 footer {
-  background-color: #222222;
-  padding: 95px 0 115px;
-  position: relative;
-}
-
-footer::after {
-  content: "";
-  background: url(../img/Map_Image.png) no-repeat;
-  position: absolute;
-  width: 614px;
-  height: 537px;
-  top: 58%;
-  right: 0;
-  transform: translate(0, -50%);
+  background: url(../img/Map_Image.png) #222222 no-repeat right;
+  padding: 90px 0 115px;
 }
 
 footer .content_headline h2 {
@@ -157,6 +146,7 @@ footer .content_headline h2 {
   width: 455px;
   height: 210px;
   padding: 18px;
+  resize: none;
 }
 
 .form-text1,
@@ -198,12 +188,12 @@ footer .content_headline h2 {
 }
 
 /* Validation form text (styles) */
-.text-form input:valid,
-.text-form textarea:valid {
-  outline: 2px green solid;
+.text-form input:valid:focus,
+.text-form textarea:valid:focus {
+  outline: 3px green solid;
 }
 
-.text-form input:invalid,
-.text-form textarea:invalid {
-  outline: 2px red solid;
+.text-form input:invalid:focus,
+.text-form textarea:invalid:focus {
+  outline: 3px red solid;
 }
