@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap");
-
 /* Mobile css */
 
 .container {
@@ -73,7 +72,7 @@ header h3 {
   margin: 0 auto 15px;
 }
 
-.button {
+.button1 {
   font: 700 14px "Montserrat";
   color: #ffffff;
   width: 280px;
@@ -87,30 +86,93 @@ header h3 {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .content h2 {
-    font: 700 22px "Montserrat";
-    color: #333333;
-    text-align: center;
-    margin-bottom: 20px;
+  font: 700 22px "Montserrat";
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .partners_wrap-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 25px;
+  width: 220px;
 }
 
-.partners_wrap-item h3 {
-    font: 700 14px "Montserrat";
-    color: #333333;
+.person_img {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.person_img::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: 4.0px solid #ffffff;
+  border-radius: 20px;
+  right: 0;
+  bottom: 0;
+}
+
+.person_img:hover::before {
+  background-color: #666666;
+}
+
+.icon1::before {
+  background: url(../img/icon1.png) #ff4e50 no-repeat center;
+}
+
+.icon2::before {
+  background: url(../img/icon2.png) #ffa507 no-repeat center;
+}
+
+.icon3::before {
+  background: url(../img/icon3.png) #1cd7ad no-repeat center;
+}
+
+.icon4::before {
+  background: url(../img/icon4.png) #4e73db no-repeat center;
+}
+
+.partners_wrap-item h3 a {
+  font: 700 14px "Montserrat";
+  color: #333333;
+  margin-bottom: 15px;
 }
 
 .partners_wrap-item h4 {
-    font: 300 14px "Roboto";
-    color: #666666;
-    text-align: center;
+  font: 300 14px "Roboto";
+  color: #666666;
+  text-align: center;
+}
+
+.button2 {
+  font: 700 14px "Montserrat";
+  color: #ff4e50;
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 2.0px solid #ff4e50;
+  margin-bottom: 55px;
+}
+
+/* Tablet css */
+
+@media (min-width:320px) {
+  header {
+    background: url(../img/background_tablet.png) no-repeat center;
+  }
 }
