@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap");
+
+.container {
+    min-width: 320px;
+}
+
+header {
+    background: url(../img/background_mobile.png) no-repeat center #000000;
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.menu-item a {
+    font: 700 14px/14px "Montserrat";
+    color: #ffffff;
+    width: 90px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255, 0);
+    transition: 0.2s linear;
+}
+
+.menu-item a:hover {
+    border: 2.0px solid #ffffff;
+}
+
+.logo a {
+    font: 700 20px "Montserrat";
+    color: #ffffff;
+}
+
+.slider-text h1 {
+    font: 700 30px "Montserrat";
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 -15px 3%;
+}
+
+.slider-text p {
+    font: 300 18px "Roboto";
+    color: #ffffff;
+    width: 80%;
+    margin: 0 auto 4%;
+}
+
+.btn-partner1 {
+    font: 700 14px/14px "Montserrat";
+    color: #ffffff;
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+    margin: 0 auto;
+}
+
+.btn-partner1:hover {
+    background-color: #fa6d6f;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 115px;
+}
+
+nav {
+    padding: 4% 0 0 0;
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    font: 700 22px "Montserrat";
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partners_wrap {
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.partners_wrap-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 217px;
+}
+
+.person_img {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.person_img::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border: 4.0px solid #ffffff;
+    border-radius: 20px;
+    right: 0;
+    bottom: 0;
+    transition: all 200ms linear;
+}
+
+.person_img:hover::before {
+    background-color: #666666;
+}
+
+.icon1::before {
+    background: url(../img/icon1.png) #ff4e50 no-repeat center;
+}
+
+.icon2::before {
+    background: url(../img/icon2.png) #ffa507 no-repeat center;
+}
+
+.icon3::before {
+    background: url(../img/icon3.png) #1cd7ad no-repeat center;
+}
+
+.icon4::before {
+    background: url(../img/icon4.png) #4e73db no-repeat center;
+}
+
+.partners_wrap-item h3 a {
+    font: 700 14px "Montserrat";
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.partners_wrap-item p {
+    font: 300 14px "Roboto";
+    color: #666666;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.button2 {
+    font: 700 14px "Montserrat";
+    color: #ff4e50;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2.0px solid #ff4e50;
+    margin-bottom: 40px;
+    transition: all 200ms linear;
+}
+
+.button2:hover {
+    background-color: #ff4e50;
+    color: #ffffff;
+}
+
+/* Tablet css */
+
+@media (min-width:321px) {
+    header {
+        background: url(../img/background_tablet.png) no-repeat center #333333;
+        background-size: cover;
+    }
+}
+
+@media (min-width:768px) {
+    header {
+        height: 700px;
+    }
+    .navigation {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 140px;
+    }
+    .menu {
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .logo {
+        text-align: left;
+    }
+    .slider-text h1 {
+        font-size: 52px;
+        width: 80%;
+        margin: 0 auto 3%;
+    }
+    .slider-text p {
+        font-size: 24px;
+    }
+    nav {
+        padding: 6% 10px 0;
+    }
+    .content h2 {
+        margin-bottom: 30px;
+    }
+}
+
+/* Desktop css */
+
+@media (min-width:769px) {
+    header {
+        background: url(../img/background_desktop.png) no-repeat center #333333;
+        background-size: cover;
+    }
+}
+
+@media (min-width:970px) {
+    .container {
+        max-width: 970px;
+    }
+    .menu {
+        padding-right: 0;
+    }
+    .logo {
+        padding-left: 0;
+    }
+    .partners_wrap {
+        width: 100%;
+    }
+    .slider-text h1 {
+        width: 66%;
+    }
+    nav {
+        padding: 4% 10px 0;
+    }
+}
