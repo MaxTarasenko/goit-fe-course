@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300,400&display=swap');
+
+/* ----- Fonts ----- */
+
+/* 
+font-family: 'Kaushan Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+header {
+    background: url(../img/bg.png) center no-repeat;
+}
+
+@media (min-resolution:2dppx) {
+    header {
+        background: url(../img/bg@2x.png) center no-repeat;
+    }
+}
+
+.container {
+    max-width: 1231px;
+    height: 1000px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* ------------ Navigation menu ------------ */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-bottom: 140px;
+}
+
+.logo a {
+    font: 700 30px/30px 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+}
+
+.menu-item a {
+    font: 400 14px 'Montserrat', sans-serif;
+    color: #ffffff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item a:hover {
+    color: #fce38a;
+}
+
+.menu-item a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    transition: all 200ms linear;
+    opacity: 0;
+    margin-top: 8px;
+}
+
+.menu-item a:hover::after {
+    transition: all 200ms linear;
+    opacity: 1;
+}
+
+.shopping_cart-icon {
+    background: url(../img/shopping_cart-icon.png) no-repeat center;
+    width: 18px;
+    height: 15px;
+}
+
+.search-icon {
+    background: url(../img/search-icon.png) no-repeat center;
+    width: 18px;
+    height: 18px;
+}
+
+/* Header text */
+
+.header-text h1 {
+    font: 400 72px/72px 'Kaushan Script', cursive;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto 35px;
+}
+
+.header-text p {
+    font: 700 150px/150px 'Montserrat', sans-serif;
+    line-height: 140px;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 802px;
+    text-align: center;
+    margin: 0 auto 120px;
+}
+
+.header-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    border: 3.0px solid #ffffff;
+    font: 700 14px 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    margin: 0 auto;
+    transition: all 200ms linear;
+}
+
+.header-text a:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}

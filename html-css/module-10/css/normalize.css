@@ -347,3 +347,13 @@
   [hidden] {
     display: none;
   }
+
+  /* My reset style */
+  li, ul {
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
