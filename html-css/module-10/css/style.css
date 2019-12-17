@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300,400&display=swap');
 
 /* ----- Fonts ----- */
@@ -13,7 +15,9 @@ header {
     margin-bottom: 20px;
 }
 
-@media (min-resolution:2dppx) {
+@media (-webkit-min-device-pixel-ratio:2),
+(-o-min-device-pixel-ratio:2/1),
+(min-resolution:2dppx) {
     header {
         background: url(../img/bg@2x.png) center no-repeat;
     }
@@ -30,7 +34,11 @@ header {
 /* ------------ Navigation menu ------------ */
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 25px;
     margin-bottom: 140px;
@@ -42,7 +50,11 @@ header {
 }
 
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 620px;
 }
@@ -52,9 +64,18 @@ header {
     color: #ffffff;
     line-height: 1.2;
     text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -67,12 +88,16 @@ header {
     width: 100%;
     height: 3px;
     background-color: #fce38a;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
     opacity: 0;
     margin-top: 8px;
 }
 
 .menu-item a:hover::after {
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
     opacity: 1;
 }
@@ -109,8 +134,14 @@ header {
 }
 
 .header-text a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 160px;
     height: 40px;
@@ -120,6 +151,8 @@ header {
     font-family: Montserrat;
     text-transform: uppercase;
     margin: 0 auto;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
@@ -130,7 +163,12 @@ header {
 /* --------------------- Amazing Services --------------------- */
 
 .headline {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 60px;
 }
@@ -139,8 +177,15 @@ header {
     font: 24px "Kaushan Script";
     color: rgb(51, 51, 51);
     line-height: 1.2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -174,15 +219,26 @@ header {
 }
 
 .services_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 228px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: justify;
     align-content: space-between;
 }
 
 .services-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-preferred-size: 350px;
     flex-basis: 350px;
 }
 
@@ -234,26 +290,43 @@ header {
 /* --------------------- Meet our team --------------------- */
 
 .teams {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 80px;
 }
 
 .teams_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-preferred-size: 380px;
     flex-basis: 380px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .teams_image-box {
     position: relative;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
     height: 470px;
 }
 
 .teams_image-box:hover {
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
     box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
 }
 
@@ -268,6 +341,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
@@ -276,6 +351,8 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fce38a), to(#f38181));
+    background-image: -o-linear-gradient(bottom, #fce38a 0%, #f38181 100%);
     background-image: linear-gradient(0deg, #fce38a 0%, #f38181 100%);
     opacity: 0.9;
     z-index: 1;
@@ -285,8 +362,12 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -294,10 +375,18 @@ header {
     background-color: rgb(252, 227, 138);
     width: 56px;
     height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 1px;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
@@ -328,9 +417,18 @@ header {
 }
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-bottom: 10px;
 }
@@ -368,6 +466,30 @@ footer input[type="text"] {
     padding-left: 12px;
 }
 
+footer input[type="text"]::-webkit-input-placeholder {
+    font: 300 15px/35px "Roboto";
+    font-style: italic;
+    color: #cccccc;
+}
+
+footer input[type="text"]::-moz-placeholder {
+    font: 300 15px/35px "Roboto";
+    font-style: italic;
+    color: #cccccc;
+}
+
+footer input[type="text"]:-ms-input-placeholder {
+    font: 300 15px/35px "Roboto";
+    font-style: italic;
+    color: #cccccc;
+}
+
+footer input[type="text"]::-ms-input-placeholder {
+    font: 300 15px/35px "Roboto";
+    font-style: italic;
+    color: #cccccc;
+}
+
 footer input[type="text"]::placeholder {
     font: 300 15px/35px "Roboto";
     font-style: italic;
@@ -383,6 +505,8 @@ footer input[type="button"] {
     border: 0 solid;
     cursor: pointer;
     vertical-align: top;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
