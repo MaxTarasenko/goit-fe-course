@@ -306,35 +306,11 @@ header {
 }
 
 .social_media a:hover {
-    background-color: #95e1d3;
+    background-color: #f38181;
 }
 
-.facebook-icon {
-    background: url(../img/facebook.png) no-repeat;
-    width: 13px;
-    height: 26px;
-    display: block;
-}
-
-.twitter-icon {
-    background: url(../img/twitter.png) no-repeat;
-    width: 26px;
-    height: 22px;
-    display: block;
-}
-
-.pinterest-icon {
-    background: url(../img/pinterest.png) no-repeat;
-    width: 21px;
-    height: 26px;
-    display: block;
-}
-
-.instagram-icon {
-    background: url(../img/instagram.png) no-repeat;
-    width: 26px;
-    height: 26px;
-    display: block;
+.social_media a:hover path {
+    fill: #ffffff;
 }
 
 .teams_items h3 {
@@ -356,6 +332,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    margin-bottom: 10px;
 }
 
 footer::before {
