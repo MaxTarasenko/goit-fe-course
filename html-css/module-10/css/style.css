@@ -117,18 +117,6 @@ header .container {
     opacity: 1;
 }
 
-.shopping_cart-icon {
-    background: url(../img/shopping_cart-icon.png) no-repeat center;
-    width: 18px;
-    height: 15px;
-}
-
-.search-icon {
-    background: url(../img/search-icon.png) no-repeat center;
-    width: 18px;
-    height: 18px;
-}
-
 /* Header text */
 
 .header-text h1 {
@@ -400,9 +388,7 @@ header .container {
     -ms-flex-align: center;
     align-items: center;
     margin-right: 1px;
-    -webkit-transition: all 200ms linear;
-    -o-transition: all 200ms linear;
-    transition: all 200ms linear;
+    transition: all 300ms linear;
 }
 
 .social_media a:last-child {
@@ -411,10 +397,17 @@ header .container {
 
 .social_media a:hover {
     background-color: #f38181;
+    transition: all 300ms linear;
 }
 
-.social_media a:hover path {
+.social_media a svg {
+    fill: #f38181;
+    transition: all 300ms linear;
+}
+
+.social_media a:hover svg {
     fill: #ffffff;
+    transition: all 300ms linear;
 }
 
 .teams_items h3 {
