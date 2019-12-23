@@ -438,7 +438,7 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 footer::before {
@@ -452,6 +452,7 @@ footer p {
     font: 400 14px "Montserrat";
     color: #333333;
     margin: 0;
+    padding-top: 10px;
 }
 
 footer p a {
@@ -464,9 +465,9 @@ footer form {
     font-size: 0;
 }
 
-footer input[type="text"] {
+footer form input[type="text"] {
     width: 230px;
-    height: 35px;
+    height: 40px;
     background-color: #ffffff;
     border: 1px solid #e7e7e7;
     vertical-align: top;
@@ -474,37 +475,37 @@ footer input[type="text"] {
     padding-left: 12px;
 }
 
-footer input[type="text"]::-webkit-input-placeholder {
+footer form input[type="text"]::-webkit-input-placeholder {
     font: 300 15px/35px "Roboto";
     font-style: italic;
     color: #cccccc;
 }
 
-footer input[type="text"]::-moz-placeholder {
+footer form input[type="text"]::-moz-placeholder {
     font: 300 15px/35px "Roboto";
     font-style: italic;
     color: #cccccc;
 }
 
-footer input[type="text"]:-ms-input-placeholder {
+footer form input[type="text"]:-ms-input-placeholder {
     font: 300 15px/35px "Roboto";
     font-style: italic;
     color: #cccccc;
 }
 
-footer input[type="text"]::-ms-input-placeholder {
+footer form input[type="text"]::-ms-input-placeholder {
     font: 300 15px/35px "Roboto";
     font-style: italic;
     color: #cccccc;
 }
 
-footer input[type="text"]::placeholder {
+footer form input[type="text"]::placeholder {
     font: 300 15px/35px "Roboto";
     font-style: italic;
     color: #cccccc;
 }
 
-footer input[type="button"] {
+footer form input[type="button"] {
     background-color: rgb(149, 225, 211);
     font: 700 14px "Montserrat";
     text-transform: uppercase;
@@ -518,6 +519,6 @@ footer input[type="button"] {
     transition: all 200ms linear;
 }
 
-footer input[type="button"]:hover {
+footer form input[type="button"]:hover {
     background: rgb(0, 0, 0, 0.2);
 }
