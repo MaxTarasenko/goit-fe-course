@@ -25,12 +25,21 @@ ol {
 
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300,400&display=swap');
 
-$Kaushan_Script: 'Kaushan Script',
-cursive;
-$Montserrat: 'Montserrat',
-sans-serif;
-$Roboto: "Roboto",
-sans-serif;
+@mixin Montserrat400($fz) {
+  font: 400 $fz 'Montserrat', sans-serif;
+}
+@mixin Montserrat700($fz) {
+  font: 700 $fz 'Montserrat', sans-serif;
+}
+@mixin Roboto300($fz) {
+  font: 300 $fz 'Roboto', sans-serif;
+}
+@mixin Roboto400($fz) {
+  font: 400 $fz 'Roboto', sans-serif;
+}
+@mixin KaushanScript($fz) {
+  font: $fz 'Kaushan Script', cursive;
+}
 
 $color-white: #ffffff;
 $color-black-opacity2: rgba(0, 0, 0, 0.2);
@@ -47,4 +56,9 @@ $color-10: #e5e5e5;
 $color-11: #e7e7e7;
 $color-12: #cccccc;
 $color-13: rgb(149, 225, 211);
-$gradient-teams_shadow-box: linear-gradient(0deg, #fce38a 0%, #f38181 100%)
+$gradient-teams_shadow-box: linear-gradient(0deg, #fce38a 0%, #f38181 100%);
+
+%df-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
